@@ -1,6 +1,7 @@
 #include "sale.h"
 #include "inventory.h"
-
+#include <iomanip>
+#include <iostream>
 Sale::Sale(string name) {
 	username = name;
 	totalbill = 0.0;
@@ -26,16 +27,19 @@ void Sale::computebill() {
 	}
 }
 
+
+
 void Sale::printbill() {
 
 	cout << "-------------BILL FOR POS SALE -----------" << endl << endl;;
-	cout << "Product Name:\t  " << "Quantity\t" << "Price per unit\t" << endl;
 
+	cout << setw(5) << left << "S.No" << setw(20) << left << "Product Name: " << setw(12) << left << "  Quantity" << " " << setw(5) << left << " Price: " << endl;
+	cout << "\n";
 	for (int i = 0; i < this->Bill.size(); i++) {
-		cout << this->Bill[i].product_name << "\t" << this->Bill[i].quantity << "\t" << " Rs." << this->Bill[i].price << endl;
+		cout << setw(5) << left << i + 1 << setw(20) << left << this->Bill[i].product_name << "  " << setw(12) << left << this->Bill[i].quantity << setw(5) << left << "Rs. " << this->Bill[i].price << endl;
 	}
-
-	cout << "Total Bill Amount: \t" << "Rs. " << this->totalbill << endl;
+	cout << "\n";
+	cout << "Total Bill Amount: \t" << "Rs. " << this->totalbill << "/-" << "\n\n";
 	cout << "Thanks for transacting with us, " << this->username << " " << "Hope to see you soon";
 	cout << endl;
 	cout << "-----------------------------------------" << endl;
