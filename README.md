@@ -14,6 +14,6 @@ Options available for end-user-
 2     : Manually enter inventory details.
 3     : Process sale transaction for a new user.
 4     : Print history of all transactions.
-5     : Show current inventory status.
+5     : Show current inventory status. (Any sale transaction will automatically update the existing inventory)
 6     : Exit.
 
