@@ -10,6 +10,7 @@ Enter option 1, and load the existing inventory file "input.txt". Then you can f
 Note: Inventory data persists in the storage only as long as the program is running. Once the program closes, everything is destroyed and hence previous sale transaction data will not be available. 
 
 Options available for end-user-
+
 1     : Load inventory details from a local file.
 2     : Manually enter inventory details.
 3     : Process sale transaction for a new user.
