@@ -12,7 +12,7 @@ Note: Inventory data persists in the storage only as long as the program is runn
 
 Options available for end-user-
 
-1     : Load inventory details from a local file.
+1     : Load inventory details from a local file. (sample file "input.txt" is included in this directory)
 
 2     : Manually enter inventory details.
 
@@ -24,3 +24,7 @@ Options available for end-user-
 
 6     : Exit.
 
+Creating input file:
+
+The input file must adhere to the specific format -
+First line will include a number of items to be included, then for each of the N items there will be four new lines (product_name(string), product_description(string), price(double), quantity(int)). Note changing order of this input can lead to erros while processing the input file. Also, the input file must be in a location that's accessible by the program during runtime. Sample input file is included in this directory which may be used for reference.
