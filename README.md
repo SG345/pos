@@ -1,8 +1,9 @@
 # pos
 POS Machine in C++
 
-Instructions:
-To compile and run from your terminal: "g++ main.cpp pos.cpp sale.cpp inventory.cpp -o main" and then run it using "./main". 
+Compiling/Running:
+
+To compile and run from your terminal - use command "make" which'll create an executable object 'p' and then you can run the program by "./p". Alternatively you can also compile manually by "g++ main.cpp inventory.cpp sale.cpp pos.cpp -o p" and then run it "./p".
 
 Sample usage:
 Enter option 1, and load the existing inventory file "input.txt". Then you can follow the on-screen instructions by entering appropriate input values to process transactions.
